@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 - Event Registration</title>
+</head>
+<body>
+    <h1>Event Registration</h1>
+    <form action="Register">
+        <label for="Name">Name:</label><br>
+        <input type="text" id="Name" placeholder="zarar...."><br><br>
+
+        <label for="Email">Email:</label><br>
+        <input type="email" id="Email" placeholder="example@gmail.com"><br><br>
+
+        <label for="Phone">Phone:</label><br>
+        <input type="text" id="Phone" placeholder="+91 2151181"><br><br>
+
+        <label for="Occuption">Occuption:</label>
+        <select name="Occuption" id="Occuption" multiple>
+            <option value="Student">Student</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Topics of Intrest:</legend>
+            <input type="checkbox" name="Intrest" id="Intrest2">
+            <label for="Intrest2">Html</label>
+            <input type="checkbox" name="Intrest" id="Intrest1">
+            <label for="Intrest1">C#</label>
+        </fieldset><br>
+
+        <label for="Feedback">Feedback:</label><br>
+        <textarea name="Text" id="Feedback">Enter YOur Feedback...</textarea><br>
+        <button>Register</button>
+    </form>
+
+    <h2>Choose a server</h2>
+    <label for="server">Server choose karein:</label>
+    <select id="server" name="server" required>
+        <option value="" disabled selected hidden>Choose a server...</option>
+        <option value="server-1">Server 1 (US East)</option>
+        <option value="server-2">Server 2 (EU West)</option>
+        <option value="server-3">Server 3 (Asia Pacific)</option>
+    </select>
+</body>
+</html>
