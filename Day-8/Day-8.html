@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8 - Form Inputs</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Car Booking Form</legend>
+            <label for="datepicker">Select a date:</label>
+            <input type="date" id="datepicker">
+
+            <br>
+            <label for="Selector1">Select a Car:</label>
+            <select name="Cars" id="Selector1">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <button>Book your Car</button>
+            <br>
+            <textarea name="text" id="textarea1" placeholder="Enter Your Message..."></textarea>
+        </fieldset>
+
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Enter your name">
+        </p>
+        <input type="submit" name="button" id="button" value="Subscribe">
+
+        <p>
+            <label for="radio2">Radio Btn 2:</label>
+            <input type="radio" name="radioGroup" id="radio2">
+            <label for="radio3">Radio Btn 3:</label>
+            <input type="radio" name="radioGroup" id="radio3">
+            <label for="radio4">Radio Btn 4:</label>
+            <input type="radio" name="radioGroup" id="radio4">
+        </p>
+
+        <label for="skills">Skills select karein:</label>
+        <select id="skills" name="skills" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+        </select>
+
+        <p><input type="file" name="fileInput" id="fileInput"></p>
+    </form>
+</body>
+</html>
