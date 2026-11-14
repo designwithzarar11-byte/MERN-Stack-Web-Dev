@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.cont{
+    width: 80vw;
+    padding:2rem 1rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.header-cont{
+    margin-bottom: 2rem;
+}
+.header-title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.header-dis{
+    max-width: 400px;
+    text-align: center;
+    color: rgba(88, 88, 89, 0.728);
+    margin: 0 auto;
+}
+.main-cont{
+    display: grid;
+    gap: 1.5rem;
+    /* justify-content: center; */
+    /* grid-template-columns: repeat(1,1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+}
+/* @media (min-width:650px) {
+    .main-cont{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:1000px) {
+    .main-cont{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:1340px) {
+    .main-cont{
+        grid-template-columns: repeat(3,1fr);
+    }
+} */
+.card-cont{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.img-cont{
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+.card-img{
+    object-fit: fit;
+    object-position: center;
+    position: absolute;
+}
+.card-title-cont{
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+
+}
+.card-cont:hover .card-img{
+    transform: scale(1.5);
+}
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(52, 51, 51);
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.card-title:hover {
+    color: blue;
+}
+.card-dis{
+    color: rgba(55, 55, 55, 0.728);
+    font-size: 1rem;
+}
+.card-footer-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+    align-items: flex-end;
+
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+.author-avatr{
+    height:2rem ;
+    width: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.author-info{
+    display: flex;
+    flex-direction: column;
+}
+.author-nam{
+    color: rgb(59, 59, 227);
+}
+.card-tag-cont{
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: gray;
+}
