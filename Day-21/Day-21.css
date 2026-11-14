@@ -1,0 +1,19 @@
+.cnt{
+    height: 100px;
+    width: 100px;
+    margin:20px;
+      padding: 10px;
+    border-radius: 12px;
+    border: 2px solid red;
+
+    /* transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in; */
+    transition: all 4s 1s ease-in-out;
+}
+
+.cnt:hover{
+   background-color: aqua;
+   width: 1200px;
+}
